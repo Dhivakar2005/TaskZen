@@ -1,4 +1,4 @@
-# TaskMaster - Full Stack TODO Application
+# TaskZen - Full Stack TODO Application
 
 A modern, full-stack TODO application built with React, Node.js/Express, and MongoDB. Features a clean, responsive UI with vanilla CSS and a RESTful API backend.
 
@@ -7,19 +7,15 @@ A modern, full-stack TODO application built with React, Node.js/Express, and Mon
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb)
 
----
-
 ## ✨ Features
 
-- ✅ Create, read, update, and delete todos
-- ✅ Mark todos as complete/incomplete
-- ✅ Real-time task counter
-- ✅ Responsive design with modern UI
-- ✅ Smooth animations and transitions
-- ✅ MongoDB persistence
-- ✅ RESTful API architecture
-
----
+- Create, read, update, and delete todos
+- Mark todos as complete/incomplete
+- Real-time task counter
+- Responsive design with modern UI
+- Smooth animations and transitions
+- MongoDB persistence
+- RESTful API architecture
 
 ## 🛠️ Tech Stack
 
@@ -35,8 +31,6 @@ A modern, full-stack TODO application built with React, Node.js/Express, and Mon
 - **MongoDB** - Database
 - **Mongoose** - ODM for MongoDB
 - **CORS** - Cross-origin resource sharing
-
----
 
 ## 📁 Project Structure
 
@@ -63,8 +57,6 @@ TODO/
 └── README.md               # This file
 ```
 
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -72,14 +64,14 @@ TODO/
 Make sure you have the following installed on your system:
 
 - **Node.js** (v14 or higher) - [Download](https://nodejs.org/)
-- **npm** (comes with Node.js)
 - **MongoDB** (running locally on port 27017) - [Download](https://www.mongodb.com/try/download/community)
 
 ### Installation
 
-1. **Clone the repository** (or navigate to the project folder)
+1. **Clone the repository**
    ```bash
-   cd TODO
+   git clone https://github.com/Dhivakar2005/TaskZen.git
+   cd TaskZen
    ```
 
 2. **Install Frontend Dependencies**
@@ -102,9 +94,7 @@ Make sure you have the following installed on your system:
    # Or if MongoDB is not a service, run:
    mongod
    ```
-
----
-
+   
 ## ▶️ Running the Application
 
 ### Start the Backend Server
@@ -139,8 +129,6 @@ Open your browser and navigate to:
 ```
 http://localhost:3000
 ```
-
----
 
 ## 📡 API Endpoints
 
@@ -179,8 +167,6 @@ curl -X PUT http://localhost:5000/todos/<todo_id> \
 curl -X DELETE http://localhost:5000/todos/<todo_id>
 ```
 
----
-
 ## 🗄️ Database Schema
 
 ### Todo Model
@@ -192,8 +178,6 @@ curl -X DELETE http://localhost:5000/todos/<todo_id>
 | `completed` | Boolean | Completion status (default: false) |
 | `createdAt` | Date | Creation timestamp (auto-generated) |
 | `__v` | Number | Version key (Mongoose) |
-
----
 
 ## 🔧 Helper Scripts
 
@@ -223,8 +207,6 @@ Sample output:
 Total: 2 todo(s)
 ```
 
----
-
 ## 🎨 UI Features
 
 - **Gradient backgrounds** for visual appeal
@@ -235,86 +217,10 @@ Total: 2 todo(s)
 - **Delete on hover** for better UX
 - **Responsive design** works on all screen sizes
 
----
-
-## 🏗️ Building for Production
-
-### Build Frontend
-
-```bash
-cd frontend
-npm run build
-```
-
-This will create an optimized production build in the `frontend/dist` folder.
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
----
-
-## 🔍 Troubleshooting
-
-### MongoDB Connection Error
-
-**Error:** `MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017`
-
-**Solution:** Make sure MongoDB is running:
-```bash
-# Check if MongoDB service is running
-net start MongoDB
-
-# Or start MongoDB manually
-mongod
-```
-
-### Frontend Port Already in Use
-
-**Error:** `Port 3000 is already in use`
-
-**Solution:** Either stop the process using port 3000, or change the port in `vite.config.js`:
-```javascript
-server: {
-  port: 3001,  // Change to any available port
-}
-```
-
-### CORS Errors
-
-**Error:** `Access to XMLHttpRequest has been blocked by CORS policy`
-
-**Solution:** Ensure the backend has CORS enabled (already configured in `server.js`)
-
----
-
-## 📝 Development Notes
-
-- **No Tailwind CSS**: This project uses vanilla CSS for styling
-- **MongoDB Required**: Backend requires MongoDB to be running locally
-- **Hot Reload**: Frontend supports hot module replacement during development
-- **ESLint**: Frontend includes ESLint for code quality
-
----
-
 ## 🤝 Contributing
 
 Feel free to fork this project and submit pull requests for any improvements!
 
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 📧 Contact
-
-For questions or support, please open an issue in the repository.
-
----
-
-**Built with ❤️ using React, Express, and MongoDB**
